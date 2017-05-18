@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntlibValidate.Domain", "En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntlibValidate.Domain.Test", "EntlibValidate.Domain.Test\EntlibValidate.Domain.Test.csproj", "{DA12EC72-830B-4A05-9659-CF8C44B14B2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntlibValidate.Framework", "EntlibValidate.Framework\EntlibValidate.Framework.csproj", "{D9939136-7003-4595-BC73-765B1E84DFC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,12 +27,17 @@ Global
 		{DA12EC72-830B-4A05-9659-CF8C44B14B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA12EC72-830B-4A05-9659-CF8C44B14B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA12EC72-830B-4A05-9659-CF8C44B14B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9939136-7003-4595-BC73-765B1E84DFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9939136-7003-4595-BC73-765B1E84DFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9939136-7003-4595-BC73-765B1E84DFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9939136-7003-4595-BC73-765B1E84DFC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{095B8653-CCF3-4759-AE83-A9D868746DA2} = {C6B043F8-D27F-475B-8BED-B5690BEA8375}
+		{D9939136-7003-4595-BC73-765B1E84DFC8} = {C6B043F8-D27F-475B-8BED-B5690BEA8375}
 		{DA12EC72-830B-4A05-9659-CF8C44B14B2F} = {2E6F517E-AEBE-4743-85C9-10761DA1F4E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

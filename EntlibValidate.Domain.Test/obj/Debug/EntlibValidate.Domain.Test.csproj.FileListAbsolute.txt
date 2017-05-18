@@ -20,3 +20,5 @@ E:\mytest\EntlibValidate\EntlibValidate.Domain.Test\bin\Debug\Microsoft.Practice
 E:\mytest\EntlibValidate\EntlibValidate.Domain.Test\obj\Debug\EntlibValidate.Domain.Test.csprojResolveAssemblyReference.cache
 E:\mytest\EntlibValidate\EntlibValidate.Domain.Test\obj\Debug\EntlibValidate.Domain.Test.dll
 E:\mytest\EntlibValidate\EntlibValidate.Domain.Test\obj\Debug\EntlibValidate.Domain.Test.pdb
+E:\mytest\EntlibValidate\EntlibValidate.Domain.Test\bin\Debug\EntlibValidate.Framework.dll
+E:\mytest\EntlibValidate\EntlibValidate.Domain.Test\bin\Debug\EntlibValidate.Framework.pdb

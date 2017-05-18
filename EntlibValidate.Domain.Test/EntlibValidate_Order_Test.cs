@@ -20,7 +20,7 @@ namespace EntlibValidate.Domain.Test
             order.Lines.Add(new OrderLine(){Qty = 12, SkuName = "yg_aaaaaaaa", SalePrice = 1});
             order.Lines.Add(new OrderLine() { Qty = 18,SkuName = null, SalePrice = 20});
 
-            order.ShippingAddress = new Address();
+            order.ShippingAddress = new Domain.Address();
             order.ShippingAddress.Province = "山东";
 
             order.Pwd = "88888qqqq454";
@@ -33,7 +33,7 @@ namespace EntlibValidate.Domain.Test
 
             //触发验证方式一
             //var orderValidation = ValidationFactory.CreateValidator<Order>();
-            //var rs = orderValidation.Validate(order);
+            //var rs = orderValidation.DoValidate(order);
             //if (!rs.IsValid)
             //{
             //    foreach (var item in rs)
@@ -45,12 +45,12 @@ namespace EntlibValidate.Domain.Test
             //触发验证方式二
             Console.WriteLine(string.Format("验证结果:{0}", order.IsValid)); 
 
-            var rs = order.ValidateThrowIf(false); //模型自验证方式触发验证
+            var rs = order.DoValidate(false); //模型自验证方式触发验证
             if (!rs.IsValid)
             {
                 foreach (var item in rs)
                 {
-                    Console.WriteLine(item.Message);
+                    Console.WriteLine(item.ErrorMessage);
                 }
             }
         }

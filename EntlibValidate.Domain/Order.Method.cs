@@ -9,23 +9,24 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using EntlibValidate.Framework;
 using Microsoft.Practices.EnterpriseLibrary.Validation;
 
 namespace EntlibValidate.Domain
 {
     public partial class Order
     {
-        protected override void AddCustomerValidate(ValidationResults validationResults)
+        protected override void AddCustomerValidate(ValidateResults validateResults)
         {
             if (string.IsNullOrEmpty(ShippingAddress.Province))
             {
-                validationResults.AddResult(new ValidationResult( "地址中的省份未设置",null,"Province","",null));
+                validateResults.Add(new ValidateResult(){ Key = "Province", ErrorMessage = "地址中的省份未设置"});
             }
             else
             {
                 if (ShippingAddress.Province != "广东")
                 {
-                    validationResults.AddResult(new ValidationResult("暂时只支持广东省内发货", null, "Province", "", null));
+                    validateResults.Add(new ValidateResult() { Key = "Province", ErrorMessage = "暂时只支持广东省内发货" });
                 }
             }
         }
