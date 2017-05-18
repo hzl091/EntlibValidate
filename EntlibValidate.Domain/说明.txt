@@ -1,0 +1,2 @@
+﻿nuget方式安装
+Install-Package EnterpriseLibrary.Validation -Version 5.0.505
