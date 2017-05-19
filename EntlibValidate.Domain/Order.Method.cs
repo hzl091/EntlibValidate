@@ -20,13 +20,13 @@ namespace EntlibValidate.Domain
         {
             if (string.IsNullOrEmpty(ShippingAddress.Province))
             {
-                validateResults.Add(new ValidateResult(){ Key = "Province", ErrorMessage = "地址中的省份未设置"});
+                validateResults.AddResult("Province","地址中的省份未设置");
             }
             else
             {
                 if (ShippingAddress.Province != "广东")
                 {
-                    validateResults.Add(new ValidateResult() { Key = "Province", ErrorMessage = "暂时只支持广东省内发货" });
+                    validateResults.AddResult("Province", "暂时只支持广东省内发货");
                 }
             }
         }

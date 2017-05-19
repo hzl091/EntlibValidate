@@ -25,5 +25,10 @@ namespace EntlibValidate.Framework
                 return Count == 0;
             }
         }
+
+        public void AddResult(string key, string errorMessage)
+        {
+            this.Add(new ValidateResult() { Key = key, ErrorMessage = errorMessage });
+        }
     }
 }
